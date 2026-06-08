@@ -50,6 +50,30 @@ Returns:
 -------
     float: The annual balance.
 
+Example:
+-------
+    >>> manager = Manager()
+    >>> manager.calculate_annual_balance(year=2023)
+
+    >>> params = Parameters(apartments_json='...', ...)
+    >>> manager = Manager(parameters=params)
+
+    >>> manager.get_apartment_costs("apart-polanka", 2026, 6)
+    1250.5
+
+    >>> settlement = manager.get_settlement("apart-polanka", 2026, 6)
+    >>> print(settlement.total_due)
+
+    >>> report = manager.generate_apartment_events_report("apart-polanka")
+    >>> len(report) > 0
+
+    >>> is_valid = manager.check_tenants_apartment_keys()
+    >>> print(is_valid)
+
+
+
+
+
 Authors
 ------
 Łukasz Kułacz - initial implementation, testing, documentation
