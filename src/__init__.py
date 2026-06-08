@@ -42,8 +42,17 @@ Highlights
 - Clean separation between data schema and business rules.
 - Ready for automatic API documentation with ``pdoc``.
 
+Args:
+----
+    year (int): The year for which to calculate the balance.
+
+Returns:
+-------
+    float: The annual balance.
+
 Authors
 ------
 Łukasz Kułacz - initial implementation, testing, documentation
+Oliwia Wichlaj - debugging, testing, documentation
 
 """
